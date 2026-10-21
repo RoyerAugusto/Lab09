@@ -1,10 +1,11 @@
-
 package com.example.lab09
 
 import android.util.Log
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.outlined.Search
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.runtime.snapshots.SnapshotStateList
@@ -56,7 +57,10 @@ fun ScreenPosts(
                     },
                     modifier = Modifier.weight(0.1f)
                 ) {
-                    Text("Ver")
+                    Icon(
+                        imageVector = Icons.Outlined.Search,
+                        contentDescription = "Ver"
+                    )
                 }
             }
         }
